@@ -12,12 +12,15 @@
         <li>Создаем ветку разработки - git branch develop</li>
         <li>Переходим на ветку разработки - git checkout develop</li>
         <li>Отправляем ветку на GitHub - git push origin develop</li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li>Создать от ветки develop feature/-ветки и мерджить feature/-ветки в develop (release/0.1.0), когда фичи будут выполнены</li>
+        <li>Создание ветки release/0.1.0 от develop - git branch develop release/0.1.0 и Переходим на ветку разработки - git checkout release/0.1.0 (git branch - список веток и на какой находимся)</li>
+        <Li>Все feature/-ветки по окончанию работы мерджатся в ветку release/0.1.0</Li>
+        <li>Когда ветка release/0.1.0 закончена, то она мерджится в develop и main и затем удаляется</li>
+        <li>Если в ветке main обнаруживается ошибка, то создается hotfix-ветка - по окончании работы hotfix-ветка мерджится в ветку develop и ветку main</li>
+        <li>git checkout develop - git merge hotfix - git push origin develop</li>
+        <li>git checkout main - git merge hotfix - git push origin main</li>
+        <li>После этого hotfix-ветка удаляется (локально) - git branch -d hotfix</li>
+        <li>После этого hotfix-ветка удаляется (на GitHub) - находясь в ветке develop нажимаем кнопка branches и удаляем ветку hotfix</li>
     </ul>
     
 </body>
